@@ -1,9 +1,93 @@
 :root{
-    --
+    --logo-color: #FED136;
+    --title-color: #222;
+    --background-color: #FFF;
+    --text-color: #777;
 }
-
 
 
 /* font-family: 'Bilbo Swash Caps', cursive; */
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Roboto Slab', serif; */
+
+body{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container{
+    width: 964px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.navigation-list{
+    display: flex;
+}
+.navigation-item{
+    margin-left: 30px;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    font-family: 'Bilbo Swash Caps';
+    color: var(--logo-color);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 114%;
+    letter-spacing: 1.3px;
+}
+.navigation-link{
+    color: var(--logo-color);
+    line-height: 293%;
+    text-transform: uppercase;
+}
+.services-title{
+    color: var(--title-color);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 187%;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    margin-top: 86.5px;
+    margin-bottom: 93.5px;
+    text-align: center;
+}
+.services-subtitle{
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.45px;
+    margin-bottom: 20px;
+}
+.service-text{
+    color: var(--text-color);
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: -0.35px;
+    text-align: center;
+}
+.service-list{
+    display: flex;
+    justify-content: space-between;
+}
+.service-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 274px;
+    text-align: center;
+}
+.services-wrap{
+    height: 70px;
+    width: 70px;
+    border: 3px solid var(--logo-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
